@@ -1,0 +1,187 @@
+﻿<Window x:Class="MyShop.GUI.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="700" Width="500" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#310E68" Offset="0.25"/>
+                <GradientStop Color="#5F0F40" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel Width="370" MaxWidth="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Sign up" FontWeight="Bold" FontSize="36" Margin="0,10,0,5" HorizontalAlignment="Center" Foreground="White"/>
+            <TextBlock Text="To use all features of the application" FontWeight="Normal" FontSize="15" 
+                       HorizontalAlignment="Center" Foreground="White"/>
+            <TextBlock x:Name="errorMessage" FontWeight="Medium" FontSize="15" Margin="0,10,10,10" 
+                       HorizontalAlignment="Center" Foreground="Red"/>
+
+            <TextBlock Text="Fullname:" FontWeight="Bold"  Margin="0,0,0,7" Foreground="White"/>
+            <Border BorderThickness="0.5" BorderBrush="#071952" CornerRadius="18"
+                    Grid.Column="1" Background="White" 
+                    HorizontalAlignment="Left"
+                    Height="35" Width="370"
+                    Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <fa:ImageAwesome 
+                        Name="fullnameIcon"
+                        Width="20" Height="20"
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        Icon="AddressBook"
+                        Foreground="#071952"/>
+                    <Grid Grid.Column="1"
+                          Width="300" Margin="0"
+                          HorizontalAlignment="Left">
+                        <TextBox BorderThickness="0" VerticalContentAlignment="Center"
+                            FontSize="13" x:Name="fullNameInput" Margin="0,1,0,1"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <TextBlock Text="Username:" FontWeight="Bold"  Margin="0,0,0,7" Foreground="White"/>
+            <Border BorderThickness="0.5" BorderBrush="#071952" CornerRadius="18"
+                    Grid.Column="1" Background="White" 
+                    HorizontalAlignment="Left"
+                    Height="35" Width="370"
+                    Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <fa:ImageAwesome 
+                        Name="usernameIcon"
+                        Width="20" Height="20"
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        Icon="User"
+                        Foreground="#071952"/>
+                    <Grid Grid.Column="1"
+                          Width="300"
+                          Margin="0"
+                          HorizontalAlignment="Left">
+                        <TextBox BorderThickness="0" VerticalContentAlignment="Center"
+                            FontSize="13" x:Name="usernameInput" Margin="0,1,0,1"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <TextBlock Text="Password:" FontWeight="Bold"  Margin="0,0,0,7" Foreground="White"/>
+            <Border BorderThickness="0.5" BorderBrush="#071952" CornerRadius="18"
+                    Grid.Column="1" Background="White" 
+                    HorizontalAlignment="Left"
+                    Height="35" Width="370"
+                    Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <fa:ImageAwesome 
+                        Name="PasswordIcon"
+                        Width="20" Height="20"
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        Icon="Lock"
+                        Foreground="#071952"/>
+                    <Grid Grid.Column="1" Width="300" Margin="0" HorizontalAlignment="Left">
+                        <PasswordBox BorderThickness="0" VerticalContentAlignment="Center"
+                            FontSize="13" x:Name="passwordInput"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <TextBlock Text="Address:" FontWeight="Bold"  Margin="0 0 0 7" Foreground="White"/>
+            <Border BorderThickness="0.5" BorderBrush="#071952" CornerRadius="18"
+                    Grid.Column="1" Background="White" 
+                    HorizontalAlignment="Left"
+                    Height="35" Width="370"
+                    Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <fa:ImageAwesome 
+                        Name="addressIcon"
+                        Width="20" Height="20"
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        Icon="Home"
+                        Foreground="#071952"/>
+                    <Grid Grid.Column="1" Width="300"
+                          Margin="0" HorizontalAlignment="Left">
+                        <TextBox BorderThickness="0" VerticalContentAlignment="Center"
+                            FontSize="13" x:Name="addressInput"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <TextBlock Text="Numberphone:" FontWeight="Bold"  Margin="0 0 0 7" Foreground="White"/>
+            <Border BorderThickness="0.5" BorderBrush="#071952" CornerRadius="18"
+                    Grid.Column="1" Background="White" 
+                    HorizontalAlignment="Left"
+                    Height="35" Width="370"
+                    Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <fa:ImageAwesome 
+                        Name="phoneIcon"
+                        Width="20" Height="20"
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        Icon="Phone"
+                        Foreground="#071952"/>
+                    <Grid Grid.Column="1"
+                          Width="300" Margin="0"
+                          HorizontalAlignment="Left">
+                        <TextBox BorderThickness="0" VerticalContentAlignment="Center"
+                            FontSize="13" x:Name="phoneNumberInput"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0" >
+                <Button Margin="0,0,10,0"
+                        Width="163" Height="30"
+                        Style="{StaticResource CustomButtonStyle}"
+                        BorderThickness="0.5"
+                        Background="White"
+                        BorderBrush="#071952"
+                        Name="Button_Signup"
+                        Click="registerButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Sign up" FontWeight="Medium" Foreground="#071952"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Margin="10,0,0,0"
+                        Width="163" Height="30"
+                        Style="{StaticResource CustomButtonStyle}"
+                        BorderThickness="0.5"
+                        Background="White"
+                        BorderBrush="Gray"
+                        Name="Button_Exit"
+                        Click="exitButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Back to Login" FontWeight="Medium" Foreground="Black"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
