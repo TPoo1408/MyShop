@@ -1,13 +1,12 @@
-# ĐỒ ÁN 1: MyShop
+# ĐỒ ÁN 1: MyShop - Đồ án môn Lập trình Windows
 
 ### Thông tin nhóm
 
 |       Họ và tên      |   MSSV   |
 |----------------------|:--------:|
 | Phạm Mạnh Cường      | 21120423 |
-| Châu Thanh Dương     | 21120437 |
 | Chu Quang Duy        | 21120440 |
-| Châu Hoàng Khoa      | 21120481 |
+
 
 ### Các chức năng đã làm được
 1. Chức năng cơ sở (5 điểm)
@@ -28,11 +27,9 @@
 ### Điểm tự đánh giá cho từng thành viên
 
 |       Họ và tên      |   MSSV   |  Điểm  |
-|----------------------|:--------:|	   |
+|----------------------|:--------:|:-------:|
 | Phạm Mạnh Cường      | 21120423 |   10   |
-| Châu Thanh Dương     | 21120437 |   10   |
 | Chu Quang Duy        | 21120440 |   10   |
-| Châu Hoàng Khoa      | 21120481 |   10   |
 
 ### Điểm đề nghị cho bài tập
 - Điểm đề nghị: 10 điểm
@@ -40,3 +37,10 @@
 
 ### Link youtube demo
 - https://youtu.be/Nv-gH4arb0M
+
+### Cài đặt
+1. Clone repository
+2. Chạy file Script trong Utilities
+3. Import Category Sheet (như trong demo)
+4. Import Product Sheet (như trong demo)
+5. Run App
